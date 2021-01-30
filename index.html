@@ -132,6 +132,10 @@
     if(isIncrease == false && ticketClassVal >0){
         newTicketClassVal= ticketClassVal -1
     }
+    if(ticketClassVal<0)
+    {
+        alert("Sorry!Invalid key.Try again")
+    }
     document.getElementById(ticket + '-class-value').value =newTicketClassVal
     let ticketTotal =0
     if(ticket=='first'){
